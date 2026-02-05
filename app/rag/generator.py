@@ -12,7 +12,7 @@ class Generator:
         
         genai.configure(api_key=api_key)
         self.model = genai.GenerativeModel(model_name)
-        print(f"✓ Gemini model initialized: {model_name}")
+        print(f" Gemini model initialized: {model_name}")
     
     def generate_answer(self, query: str, documents: List[Document]) -> str:
         context = self._build_context(documents)
